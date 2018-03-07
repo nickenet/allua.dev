@@ -1,0 +1,6 @@
+<?php
+
+$db->close();
+exit;
+
+?>

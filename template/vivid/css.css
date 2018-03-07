@@ -1,0 +1,361 @@
+html { overflow-x: auto; } 
+
+
+BODY {
+
+font-family : tahoma, verdana, arial, helvetica; 
+font-size : 11px; 
+color : #000000; 
+background-color : #ffffff; 
+margin : 0; 
+} 
+
+.bodyborder
+
+{
+	border: 1px solid #663300;
+
+}
+
+h1 {
+	font-size: 20px;
+	color: #223388;
+}
+
+BR {
+font-size : 5px; 
+margin : 0; 
+} 
+
+A {
+	font-family : tahoma, verdana, arial, helvetica;
+	font-size : 11px;
+	color : #1F50A8;
+	text-decoration : none;
+} 
+
+A:hover {
+color : #223388; 
+text-decoration : underline; 
+} 
+
+INPUT , SELECT {
+	background-color : #D6F6CE;
+	font-family : tahoma, verdana, arial, helvetica;
+	font-size : 11px;
+	color : #000000;
+	border: 1px solid #F29400;
+
+} 
+
+TEXTAREA {
+	background-color : #D6F6CE;
+	color : #000000;
+	font-family : tahoma, verdana, arial, helvetica;
+	font-size : 11px;
+	border: 1px solid #F29400;
+} 
+
+
+
+
+
+.imgCat {
+
+color : #666666; 
+list-style-image: url(./images/point.gif);
+margin: 0px;
+padding: 1em;
+
+} 
+
+
+TD {
+color : #000000; 
+font-family : tahoma, verdana, arial, helvetica; 
+font-size : 11px; 
+text-decoration : none; 
+} 
+
+form {
+border-width : 0; 
+padding : 0; 
+margin : 0; 
+display:inline;
+} 
+
+
+.border {
+	border: 1px solid #223388;
+}
+
+.border2 {
+	BACKGROUND-REPEAT: repeat-x;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-top-color: #223388;
+	border-right-color: #223388;
+	border-left-color: #223388;
+}
+
+
+/* Categories */
+
+.maincat {
+	font-family: tahoma;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration : none;
+	color: #1F50A8;
+}
+
+
+
+
+
+
+
+/* SubCategories on the index page */
+
+.subcat {
+	font-family: verdana;
+	font-size: 10px;
+	text-decoration : underline;
+	color: #6DBF8A;
+
+}
+
+
+
+
+
+
+/* Category Counters (number of subcategories, number of listings */
+
+.count {
+	font-family: verdana;
+	font-size: 9px;
+	color: #6DBF8A;
+	text-decoration : none;
+
+}
+
+
+
+/* Empty Categories */
+
+.emptycat {
+	font-family: tahoma;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration : none;
+	color: #1F50A8;
+}
+
+
+/* Empty SubCategories on the index page*/
+
+.emptycat2 {
+	font-family: verdana;
+	font-size: 10px;
+	text-decoration : none;
+	color: #FF9900;
+}
+
+
+/* Side boxes gray text (hits, date) */
+
+.sideboxtext {
+        font-family: tahoma;
+        font-size: 10px;
+	text-decoration : none; 
+	color: AAAAAA;
+}
+
+/* Side boxes description font */
+
+.boxdescr
+{
+        font-family: verdana, tahoma, arial;
+        font-size: 9px;
+	text-decoration : none; 
+	color: 777777;
+
+}
+
+.companyA
+{
+        font-family: verdana, tahoma, arial;
+        font-size: 12px;
+	text-decoration : none; 
+        font-weight: bold;
+	color: red;
+}
+.searchik {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #1F50A8;
+	font-weight: normal;
+}
+
+
+.companyB
+{
+        font-family: verdana, tahoma, arial;
+        font-size: 10px;
+	text-decoration : none;
+        font-weight: bold; 
+	color: blue;
+}
+
+.companyC
+{
+        font-family: verdana, tahoma, arial;
+        font-size: 10px;
+	text-decoration : none;
+        font-weight: bold;
+	color: green;
+}
+
+.companyD
+{
+        font-family: verdana, tahoma, arial;
+        font-size: 11px;
+	text-decoration : underline; 
+        font-weight: bold;
+	color: black;
+}
+.mainmenu {
+	color: #FF9900;
+	font-size: 14px;	/* ! */
+	text-decoration: none;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.mainmenu a:active, .mainmenu a:visited, .mainmenu a:link {
+	color: #FF9900;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+.mainmenu a:hover {
+	color: #FF0000;
+	text-decoration: underline;
+	font-weight: bold;
+}
+title {
+	font-family: Tahoma;
+	font-size: 11px;
+	color: #006600;
+	background-color: #FFFFCC;
+	border: 1px solid #006600;
+}
+
+.top_menu {
+	color: #FFFFFF;
+	font-size: 11px;	/* ! */
+	text-decoration: none;
+	text-align: left;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	font-weight: normal;
+}
+.top_menu a:active, .top_menu a:visited, .top_menu a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: normal;
+}
+.top_menu a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+	font-weight: normal;
+}
+.logo_in {
+	background-image: url(images/logo_bg.gif);
+	background-repeat: repeat-y;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.rev_reply_company {
+	font-family: Tahoma;
+	font-size: 11px;
+	margin: 2px;
+	border: 1px dashed #0000FF;
+	color: #0000FF;
+	padding: 3px;
+}
+.rev_reply {
+	font-family: Tahoma;
+	font-size: 11px;
+	color: #333333;
+	margin: 5px;
+	padding-left: 5px;
+}
+
+/*---Облако тегов---*/
+.clouds_xsmall { font-size: 1em; }
+.clouds_small { font-size: 1.1em; }
+.clouds_medium { font-size: 1.2em; font-weight: bold; }
+.clouds_large { font-size: 1.5em; }
+.clouds_xlarge { font-size: 1.7em; }
+
+.alpha {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.alpha:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.icon-gal {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+ 
+  line-height: 18px;
+  vertical-align: middle;
+  background-image: url(images/ico_gallery.png);
+  background-position: 18px 18px;
+  background-repeat: no-repeat;
+}
+
+.icon-gal-gallery {
+  background-position: 0 0;
+}
+.icon-gal-list {
+  background-position: -18px 0;
+}
+.icon-gal-list_full {
+  background-position: -36px 0;
+}
+
+.icon-gal-gallery.active, .icon-gal-gallery:hover {
+  background-position: -54px 0;
+}
+.icon-gal-list.active, .icon-gal-list:hover {
+  background-position: -72px 0;
+}
+.icon-gal-list_full.active, .icon-gal-list_full:hover {
+  background-position: -90px 0;
+}
+
+.container-gallery {
+width:570px;
+    margin: 0 auto;
+}
+.clearing-gallery {
+	clear: both;
+    height: 1px;
+    overflow: hidden;
+}

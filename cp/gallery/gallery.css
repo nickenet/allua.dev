@@ -1,0 +1,365 @@
+.category_gal, 
+.category_gal_u, 
+.category_sgal, 
+.category_sgal_u, 
+.category_ssgal, 
+.category_ssgal_u
+{
+    position: relative; 
+}
+.category_gal input, 
+.category_gal input_u, 
+.category_sgal input, 
+.category_sgal input_u,
+.category_ssgal input,
+.category_ssgal input_u, 
+.category_gal_u input, 
+.category_gal_u input_u, 
+.category_sgal_u input,
+.category_sgal_u input_u, 
+.category_ssgal_u input,
+.category_ssgal_u input_u
+{
+    margin-bottom: 2px; 
+    color: #555555; 
+    border: 1px solid #ccc; 
+    font-size: 12px;
+    padding: 5px; 
+    border-radius: 3px 30px 30px 3px; 
+    width: 293px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.category_gal [select], 
+.category_gal_u [select], 
+.category_gal [add], 
+.category_gal_u [add], 
+.category_gal [del], 
+.category_gal_u [del], 
+.category_sgal [select],
+.category_sgal_u [select],
+.category_sgal [add],
+.category_sgal_u [add], 
+.category_sgal [del], 
+.category_sgal_u [del], 
+.category_ssgal [select], 
+.category_ssgal_u [select], 
+.category_ssgal [add], 
+.category_ssgal_u [add], 
+.category_ssgal [del],
+.category_ssgal_u [del]  
+{ 
+    float: right; 
+    width: 24px; 
+    height: 24px; 
+    display: inline-block; 
+    cursor: pointer; 
+    margin: 3px 0 0 0;
+}
+.category_gal [select],
+.category_gal_u [select], 
+.category_sgal [select], 
+.category_sgal_u [select], 
+.category_ssgal [select],
+.category_ssgal_u [select]    
+{
+    background-image: url(./images/gal_cat_select.png);
+}
+.category_gal [select]:hover,
+.category_gal_u [select]:hover,
+.category_sgal [select]:hover,
+.category_sgal_u [select]:hover,
+.category_ssgal [select]:hover,
+.category_ssgal_u [select]:hover  
+{
+    background-image: url(./images/gal_cat_select_hover.png);
+}
+.category_gal [add],
+.category_gal_u [add],
+.category_sgal [add],
+.category_sgal_u [add],
+.category_ssgal [add],
+.category_ssgal_u [add]
+{
+    background-image: url(./images/gal_cat_add.png);
+}
+.category_gal [add]:hover,
+.category_gal_u [add]:hover,
+.category_sgal [add]:hover,
+.category_sgal_u [add]:hover,
+.category_ssgal [add]:hover,
+.category_ssgal_u [add]:hover
+{
+    background-image: url(./images/gal_cat_add_hover.png);
+}
+.category_gal [del],
+.category_gal_u [del],
+.category_sgal [del],
+.category_sgal_u [del],
+.category_ssgal [del],
+.category_ssgal_u [del]
+{
+    background-image: url(./images/gal_cat_del.png);
+}
+.category_gal [del]:hover,
+.category_gal_u [del]:hover,
+.category_sgal [del]:hover,
+.category_sgal_u [del]:hover,
+.category_ssgal [del]:hover,
+.category_ssgal_u [del]:hover
+{
+    background-image: url(./images/gal_cat_del_hover.png);
+}
+.category_gal [select],
+.category_gal_u [select],
+.category_sgal [select],
+.category_sgal_u [select],
+.category_ssgal [select],
+.category_ssgal_u [select]
+{
+    position: absolute; 
+    right: 50px; 
+    top: 14px;
+}
+.catFirm
+{
+    width: 34px !important; 
+    height: 34px; 
+    display: inline-block; 
+    background: no-repeat center center url(./images/gal_cat_filter.png); 
+}
+.catFirm:hover
+{
+        background-image: url(./images/gal_cat_filter_hover.png); 
+        box-shadow: 0 0 3px #aaa;
+}
+.filterG
+{
+    width: 100%; 
+    max-width: 1000px; 
+    margin:10px auto ;
+    text-align: right;
+}
+.filterG input
+{
+    padding:  0 0 6px 0;
+  
+}
+.filterG select
+{
+    padding: 4px; 
+
+}
+#galcat,
+#galcat_u,
+#galscat,
+#galscat_u,
+#galsscat,
+#galsscat_u
+{
+    color: blue; 
+    border-bottom: 1px dashed blue;
+} 
+#catselect,
+#catselect_u,
+#scatselect,
+#scatselect_u,
+#sscatselect,
+#sscatselect_u
+{ 
+    z-index: 100; 
+    position: absolute; 
+    border: 1px solid #ccc; 
+    border-top: 1px solid transparent; 
+    top: 41px; 
+    right: 60px; 
+    width: 271px; 
+    background: #fff; 
+    padding: 10px 10px 0px 10px; 
+    max-height: 100px; 
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#catselect > *,
+#catselect_u > *,
+#scatselect > *,
+#scatselect_u > *,
+#sscatselect > *,
+#sscatselect_u > *
+{ 
+    margin: 0 -10px 0 -10px; 
+    padding: 3px; 
+    display: block;
+}
+#catselect > *:hover,
+#catselect_u > *:hover,
+#scatselect > *:hover,
+#scatselect_u > *:hover,
+#sscatselect > *:hover,
+#sscatselect_u > *:hover
+{
+    background: #eee; 
+    cursor: pointer;
+} 
+#divfileload{
+    background: url(images/imageimport.png) no-repeat right top;
+    cursor: pointer !important;
+    color: transparent;
+    border-radius: 10px;    
+    margin: 0;
+    position: relative;
+    height: 48px;
+    width: 248px;
+    cursor: pointer;
+    overflow: hidden;
+    }
+#divfileload span{
+background: #6dcff6;
+width: 150px;
+color: #000;
+padding: 20px;  
+height:48px;
+text-align: center; 
+margin: 0 48px 0 0; 
+display: inline-block;
+}
+#divfileload input{
+width: 20px; 
+height:20px; 
+dispay: inline-block;     height: 100px;
+        cursor: pointer !important;
+      position: absolute; 
+	z-index: 2;
+    cursor:pointer;
+    opacity:0;
+   filter:alpha(opacity:0);
+   width: 1600px;
+    border:none;
+	left: -280px;
+	top: 0px;
+	font-size: 33px;
+}
+#divfileload:hover span{
+background: #fff799;
+}
+#divfileload:hover{
+    background: url(images/imageimporthover.png) no-repeat right top;
+
+}
+#uploadgal{display: table;}
+#uploadgal > div{
+    overflow: hidden;
+    margin:10px; 
+    width: 100px;
+     padding: 3px; 
+    height: 100px;
+    float:left;
+    position: relative;
+    border:1px solid #ccc;
+    background: #fff;
+    border-radius: 13px; 
+}
+#uploadgal > div > img{
+    z-index: 1;
+    position: absolute; 
+    left: 0;
+    top: 0;
+    right:0;
+    bottom:0;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+#uploadgal > div > span{
+    background: #eee;
+    width: 100px; 
+    position: absolute; 
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    padding: 3px; 
+    z-index: 2;
+    border-top: 1px solid #ccc;
+    font-size: 10px; 
+}
+#uploadgal > div > div{
+    z-index: 3;
+    position: absolute; 
+    left: -25px;
+    top: -25px;
+    width: 150px;
+    height: 150px; 
+    background: rgba(0,0,0,0.4);
+    -moz-transform: rotate(45deg); 
+    -ms-transform: rotate(45deg); 
+    -webkit-transform: rotate(45deg); 
+    -o-transform: rotate(45deg); 
+    transform: rotate(45deg);
+}
+#uploadgal > div[yes] > div{
+
+    left: 0px !important;
+    top: 0px !important;
+    width: 110px;
+    height: 110px; 
+    background: rgba(0,255,0,0.4) center center url("images/checkgal.png") no-repeat;
+    -moz-transform: rotate(0deg); 
+    -ms-transform: rotate(0deg); 
+    -webkit-transform: rotate(0deg); 
+    -o-transform: rotate(0deg); 
+    transform: rotate(0deg);
+}
+#uploadgal > div[no] > div{
+
+    left: 0px !important;
+    top: 0px !important;
+    width: 110px;
+    height: 110px; 
+    background: rgba(255,0,0,0.4) center center url("images/closegal.png") no-repeat;
+    -moz-transform: rotate(0deg); 
+    -ms-transform: rotate(0deg); 
+    -webkit-transform: rotate(0deg); 
+    -o-transform: rotate(0deg); 
+    transform: rotate(0deg);
+}
+#elementB{
+    float: none !important;  
+    clear: none;
+    position: relative;
+    width: 100%  !important;
+    height: 30px !important;    
+    background: rgba(255,0,0,0.1) !important;
+    box-shadow: 0 0 3px red  !important;
+}
+#elementB > div{
+    border: none;
+    background: transparent !important;
+    overflow: none;
+    left: 0 !important; 
+    clear: none;
+    top: 0 !important; 
+    float: none !important;  
+    width: 100% !important; 
+    display: table !important; 
+    position: static !important; 
+    -moz-transform: rotate(0deg) !important; 
+    -ms-transform: rotate(0deg) !important;  
+    -webkit-transform: rotate(0deg) !important;  
+    -o-transform: rotate(0deg) !important;  
+    transform: rotate(0deg) !important; 
+    padding:0;
+    margin:0;
+}
+.metacat{ text-align: left; color: #555;border-bottom: 1px solid #bbb; border-top: 1px solid #bbb; margin: 10px 0; padding: 10px 10px 10px 10px; border-radius: 1px; }
+.metacat > span{cursor: pointer; width:32px; height: 32px; display: block; float: left; background-position: 28px 0px; background-image:url(images/pm.png); margin: -10px 0  0 0;}
+.metacat > span[hover]{background-position: 1px 0px; }
+.edit_foto_gal{
+	cursor: pointer; 
+    width: 24px; 
+    height:24px;
+    float: right;
+    background: url(../images/edit_cat.png) top center;
+    margin: -5px 0 0 0;
+}
+.metacat form {display: block; overflow:hidden;}
+.metacat form > div {display: block; paddind: 5px; margin: 3px; }
+.metacat form > div > span{display: inline-block; width: 120px; }
