@@ -1,0 +1,6 @@
+imagealbumform=square;
+imagealbumeffect=12;
+imagealbumrevers=on;
+imagealbumsize=center;
+imagealbumrun=bottom_to_top;
+imagealbumprefix=null;

@@ -1,0 +1,120 @@
+RewriteEngine on
+
+AddDefaultCharset UTF-8
+
+RewriteRule ^rss.xml$ rss.php [L]
+
+RewriteRule ^(.+)/([0-9]+)-([0-9]+)\.html$ index.php?category=$2&page=$3
+RewriteRule ^(.+)/(.+)/([0-9]+)-([0-9]+)-([0-9]+)\.html$ index.php?cat=$3&subcat=$4&page=$5
+RewriteRule ^(.+)/(.+)/(.+)/([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)\.html$ index.php?cat=$4&subcat=$5&subsubcat=$6&page=$7
+
+RewriteRule ^(.+)/([0-9]+)-0-0-([0-9]+)-([0-9]+)\.html$ index.php?REQ=view&cat=$2&subcat=0&subsubcat=0&id=$3&page=$4
+RewriteRule ^(.+)/(.+)/([0-9]+)-([0-9]+)-0-([0-9]+)-([0-9]+)\.html$ index.php?REQ=view&cat=$3&subcat=$4&subsubcat=0&id=$5&page=$6
+RewriteRule ^(.+)/(.+)/(.+)/([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)\.html$ index.php?REQ=view&cat=$4&subcat=$5&subsubcat=$6&id=$7&page=$8
+
+RewriteRule ^(.+)/([0-9]+)-0-0-([0-9]+)-([0-9]+)-(.+)\.html$ view.php?cat=$2&subcat=0&subsubcat=0&id=$3&page=$4&type=$5
+RewriteRule ^(.+)/(.+)/([0-9]+)-([0-9]+)-0-([0-9]+)-([0-9]+)-(.+)\.html$ view.php?cat=$3&subcat=$4&subsubcat=0&id=$5&page=$6&type=$7
+RewriteRule ^(.+)/(.+)/(.+)/([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)-(.+)\.html$ view.php?cat=$4&subcat=$5&subsubcat=$6&id=$7&page=$8&type=$9
+
+RewriteRule ^alpha-(.+)-([0-9]+)\.html$ alpha.php?letter=$1&page=$2
+RewriteRule ^mail-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)\.html$ mail.php?id=$1&cat=$2&subcat=$3&subsubcat=$4&page=$5
+RewriteRule ^mail2-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)\.html$ mail2.php?id=$1&cat=$2&subcat=$3&subsubcat=$4&page=$5
+RewriteRule ^view-reviews-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)\.html$ reviews.php?id=$1&cat=$2&subcat=$3&subsubcat=$4&page=$5
+RewriteRule ^review-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)\.html$ review.php?id=$1&cat=$2&subcat=$3&subsubcat=$4&page=$5
+RewriteRule ^rating-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)\.html$ view.php?id=$1&cat=$2&subcat=$3&subsubcat=$4&page=$5&type=rate
+RewriteRule ^offers-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)-(.+)\.html$ offers.php?id=$1&page=$2&cat=$3&subcat=$4&subsubcat=$5&type=$6
+RewriteRule ^gallery-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)\.html$ gallery.php?id=$1&page=$2&cat=$3&subcat=$4&subsubcat=$5
+RewriteRule ^excel-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)\.html$ exel.php?id=$1&page=$2&cat=$3&subcat=$4&subsubcat=$5
+RewriteRule ^video-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)\.html$ video.php?id=$1&page=$2&cat=$3&subcat=$4&subsubcat=$5
+RewriteRule ^filial-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)\.html$ filial.php?id=$1&page=$2&cat=$3&subcat=$4&subsubcat=$5
+RewriteRule ^news-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)\.html$ publication.php?id=$1&type=1&page=$2&cat=$3&subcat=$4&subsubcat=$5
+RewriteRule ^tender-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)\.html$ publication.php?id=$1&type=2&page=$2&cat=$3&subcat=$4&subsubcat=$5
+RewriteRule ^board-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)\.html$ publication.php?id=$1&type=3&page=$2&cat=$3&subcat=$4&subsubcat=$5
+RewriteRule ^job-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)\.html$ publication.php?id=$1&type=4&page=$2&cat=$3&subcat=$4&subsubcat=$5
+RewriteRule ^pressrel-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)\.html$ publication.php?id=$1&type=5&page=$2&cat=$3&subcat=$4&subsubcat=$5
+RewriteRule ^news-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)\.html$ viewinfo.php?vi=$1&type=1&cat=$2&subcat=$3&subsubcat=$4
+RewriteRule ^tender-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)\.html$ viewinfo.php?vi=$1&type=2&cat=$2&subcat=$3&subsubcat=$3
+RewriteRule ^board-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)\.html$ viewinfo.php?vi=$1&type=3&cat=$2&subcat=$3&subsubcat=$4
+RewriteRule ^job-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)\.html$ viewinfo.php?vi=$1&type=4&cat=$2&subcat=$3&subsubcat=$4
+RewriteRule ^pressrel-([0-9]+)-([0-9]+)-([0-9]+)-([0-9]+)\.html$ viewinfo.php?vi=$1&type=5&cat=$2&subcat=$3&subsubcat=$4
+
+
+RewriteRule ^out-([0-9]+)\.html$ out.php?ID=$1
+RewriteRule ^outf-([0-9]+)\.html$ out.php?fil=$1
+
+RewriteRule ^ratingtop.html$ ratingtop.php [L]
+RewriteRule ^compare.html$ compare.php [L]
+RewriteRule ^stat.html$ stat.php [L]
+RewriteRule ^contact.html$ contact.php [L]
+RewriteRule ^reg.html$ reg.php [L]
+RewriteRule ^user.html$ user.php [L]
+RewriteRule ^search.html$ search.php [L]
+RewriteRule ^foto.html$ foto.php [L]
+RewriteRule ^sitemap.xml$ sitemaps/sitemap.xml [L]
+
+RewriteRule ^news/$ allnews.php [L]
+RewriteRule ^news/([^.]+)/page/([0-9]+)/$ allnews.php?category=$1&page=$2 [L]
+RewriteRule ^news/([^.]+)/?$ allnews.php?category=$1 [L]
+RewriteRule ^news/([^.]+)/page/([0-9]+)/([0-9]+)-(.*).html(/?)+$ news.php?id=$3&cat=$1&page=$2 [L]
+RewriteRule ^news/([^.]+)/([0-9]+)-(.*).html(/?)+$ news.php?id=$2&cat=$1 [L]
+
+RewriteRule ^([0-9]+)-gallery-(.*)-page-([0-9]+)/$ allimg.php?category=$1&page=$3 [L]
+RewriteRule ^([0-9]+)-gallery-(.*)/$ allimg.php?category=$1 [L]
+RewriteRule ^([0-9]+)-price-(.*)-page-([0-9]+)/$ allxls.php?category=$1&page=$3 [L]
+RewriteRule ^([0-9]+)-price-(.*)/$ allxls.php?category=$1 [L]
+RewriteRule ^([0-9]+)-product-(.*)-page-([0-9]+)/$ alloffers.php?category=$1&page=$3 [L]
+RewriteRule ^([0-9]+)-product-(.*)/$ alloffers.php?category=$1 [L]
+RewriteRule ^([0-9]+)-site-(.*)-page-([0-9]+)/$ allweb.php?category=$1&page=$3 [L]
+RewriteRule ^([0-9]+)-site-(.*)/$ allweb.php?category=$1 [L]
+RewriteRule ^([0-9]+)-inews-(.*)-page-([0-9]+)/$ allinfo.php?category=$1&type=1&page=$3 [L]
+RewriteRule ^([0-9]+)-inews-(.*)/$ allinfo.php?category=$1&type=1 [L]
+RewriteRule ^([0-9]+)-itender-(.*)-page-([0-9]+)/$ allinfo.php?category=$1&type=2&page=$3 [L]
+RewriteRule ^([0-9]+)-itender-(.*)/$ allinfo.php?category=$1&type=2 [L]
+RewriteRule ^([0-9]+)-iboard-(.*)-page-([0-9]+)/$ allinfo.php?category=$1&type=3&page=$3 [L]
+RewriteRule ^([0-9]+)-iboard-(.*)/$ allinfo.php?category=$1&type=3 [L]
+RewriteRule ^([0-9]+)-ijob-(.*)-page-([0-9]+)/$ allinfo.php?category=$1&type=4&page=$3 [L]
+RewriteRule ^([0-9]+)-ijob-(.*)/$ allinfo.php?category=$1&type=4 [L]
+RewriteRule ^([0-9]+)-ipressrel-(.*)-page-([0-9]+)/$ allinfo.php?category=$1&type=5&page=$3 [L]
+RewriteRule ^([0-9]+)-ipressrel-(.*)/$ allinfo.php?category=$1&type=5 [L]
+
+RewriteRule ^([0-9]+)-video-(.*).html(/?)+$ videofull.php?id=$1 [L]
+RewriteRule ^([0-9]+)/video/(.*).html(/?)+$ videofull.php?id=$1 [L]
+
+RewriteRule ^l/(.+)$ gl.php?name=$1 [L]
+RewriteRule ^([^/]+)\.html$ viewstatic.php?vs=$1 [L]
+
+RewriteRule ^foto/$ foto.php  [L]
+RewriteRule ^foto/([0-9]+)\.html$ foto.php?page=$1 [L]
+RewriteRule ^foto/(.+)/([0-9]+)\.html$ foto.php?galcatcpu=$1&page=$2 [L]
+RewriteRule ^foto/(.+)/$ foto.php?galcatcpu=$1&page=$2 [L]
+
+RewriteRule ^gallery/$ allimg.php [L]
+RewriteRule ^([0-9]+)-gallery/(.*)/page/([0-9]+)/$ allimg.php?category=$1&page=$3 [L]
+RewriteRule ^([0-9]+)-gallery/(.*)/$ allimg.php?category=$1 [L]
+RewriteRule ^price/$ allxls.php [L]
+RewriteRule ^([0-9]+)-price/(.*)/page/([0-9]+)/$ allxls.php?category=$1&page=$3 [L]
+RewriteRule ^([0-9]+)-price/(.*)/$ allxls.php?category=$1 [L]
+RewriteRule ^product/$ alloffers.php [L]
+RewriteRule ^([0-9]+)-product/(.*)/page/([0-9]+)/$ alloffers.php?category=$1&page=$3 [L]
+RewriteRule ^([0-9]+)-product/(.*)/$ alloffers.php?category=$1 [L]
+RewriteRule ^site/$ allweb.php [L]
+RewriteRule ^([0-9]+)-site/(.*)/page/([0-9]+)/$ allweb.php?category=$1&page=$3 [L]
+RewriteRule ^([0-9]+)-site/(.*)/$ allweb.php?category=$1 [L]
+RewriteRule ^inews/$ allinfo.php?type=1 [L]
+RewriteRule ^([0-9]+)-inews/(.*)/page/([0-9]+)/$ allinfo.php?category=$1&type=1&page=$3 [L]
+RewriteRule ^([0-9]+)-inews/(.*)/$ allinfo.php?category=$1&type=1 [L]
+RewriteRule ^itender/$ allinfo.php?type=2 [L]
+RewriteRule ^([0-9]+)-itender/(.*)/page/([0-9]+)/$ allinfo.php?category=$1&type=2&page=$3 [L]
+RewriteRule ^([0-9]+)-itender/(.*)/$ allinfo.php?category=$1&type=2 [L]
+RewriteRule ^iboard/$ allinfo.php?type=3 [L]
+RewriteRule ^([0-9]+)-iboard/(.*)/page/([0-9]+)/$ allinfo.php?category=$1&type=3&page=$3 [L]
+RewriteRule ^([0-9]+)-iboard/(.*)/$ allinfo.php?category=$1&type=3 [L]
+RewriteRule ^ijob/$ allinfo.php?type=4 [L]
+RewriteRule ^([0-9]+)-ijob/(.*)/page/([0-9]+)/$ allinfo.php?category=$1&type=4&page=$3 [L]
+RewriteRule ^([0-9]+)-ijob/(.*)/$ allinfo.php?category=$1&type=4 [L]
+RewriteRule ^ipressrel/$ allinfo.php?type=5 [L]
+RewriteRule ^([0-9]+)-ipressrel/(.*)/page/([0-9]+)/$ allinfo.php?category=$1&type=5&page=$3 [L]
+RewriteRule ^([0-9]+)-ipressrel/(.*)/$ allinfo.php?category=$1&type=5 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]+)$ view.php?name=$1
